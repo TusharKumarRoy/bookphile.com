@@ -1,0 +1,101 @@
+1. create database connection + database in beekeeper studio
+2. configure .env file 
+3. then php artisan migrate
+4. then php artisan serve 
+
+should take to laravel Default page
+
+MVC: 
+    User visits URL → Route → Controller → Model (data) → View (HTML) → User sees page
+    
+    Component	 What it does	    File location
+    
+    Route	    Maps URL to code	>routes\web.php
+    Controller	Handles logic	    >app\Http\Controllers
+    Model	    Talks to database	>app\Models
+    View	    HTML template	    >resources\views
+
+
+5. creating a simple route: 
+
+   <?php
+    Route::get('/hello', function () {
+    return 'Hello World!';                  // writing 'text to write' shows the text
+});                                         // writing view('view name'); like view('hello'); look for >resources\views\hello.blade.php   opens the view or html page
+
+   open the route by localhost/hello (url path)
+
+
+6. creating a simple view:  (>resources\views\hello.blade.php)
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bokphile.com</title>
+    </head>
+    <body>
+    <h1>Welcome to bookphile.com</h1>
+    <p>Your source for book reviews and recommendations.</p>
+    </body>
+    </html>
+
+
+passing data from routes to views .
+
+    Route::get('/hello', function () {
+    $sitename = 'bookphile.com';
+    $tagline = 'A book lover\'s paradise';  
+    
+    return view('hello', compact('sitename', 'tagline'));
+    
+    });
+
+updating in the view to access the variables:
+    <body>
+    <h1>Welcome to {{ sitename }}</h1>
+    <p>  {{ tagline }} </p>
+    </body>
+
+
+
+creating a basic controller : look in the routes\web.php , we want routes to be clean as possible , so the functions in the routes are replaced with controller functions 
+                            controller makes it easy to handle how information is passed in the routes
+
+command : php artisan make:controller PageController    <- controller_name
+
+>app\Http\Controllers\PageController.php
+
+-- add this function 
+    public function hello()
+    {
+        $sitename = 'bookphile.com';
+        $tagline = 'A book lover\'s paradise';  
+        return view('hello', compact('sitename', 'tagline'));
+    }
+
+-- modify >routes\web.php
+   Route::get('/hello', [App\Http\Controllers\PageController::class, 'hello']);
+
+
+-- make layouts (for those sections that are repeated in every web page like header , footer , page title)
+-- use @yield('section_name')  in >resources\views\layouts\app.blade.php
+
+-- and in the view >resources\views\hello.blade.php
+-- @section('section_name', html code )
+
+
+create models and respective migrations 
+-- php artisan make:model Book -m    <- this -m also creates a migration for the model as well
+-- php artisan migrate
+
+-- php artisan make:model Author -m
+-- php artisan migrate
+
+-- for many to many Relationships make pivot tables (author_book)
+
+-- in the models , use $fillables (to protect database ) , fillable e id rakha jabena 
+
+
+
