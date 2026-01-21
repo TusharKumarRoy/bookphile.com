@@ -1,59 +1,251 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 Bookphile - Social Reading Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-12.0-red.svg)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2-blue.svg)](https://php.net)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.1-38B2AC.svg)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## About Laravel
+A full-featured social reading platform inspired by Goodreads.com, where book lovers can discover, track, review, and discuss their favorite books in a vibrant community setting.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> **Note:** This project was originally developed as part of CSE 3100: Web Programming Laboratory and has been continuously improved and expanded with new features.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📖 Reading Management
+- **Book Discovery** - Browse and search through a comprehensive database of books, authors, and genres
+- **Reading Lists** - Track books with status: Want to Read, Currently Reading, or Finished
+- **Personal Library** - Organize your reading journey with customizable wishlists and favorites
+- **Reviews & Ratings** - Share your thoughts with detailed reviews and star ratings
+- **Book Details** - View comprehensive information including ISBN, publication dates, page counts, and cover images
 
-## Learning Laravel
+### 👥 Social Networking
+- **User Profiles** - Customizable profiles with bio, avatar, and reading statistics
+- **Friend System** - Send and accept friend requests to build your reading network
+- **Follow Users** - Follow readers and authors to stay updated with their activities
+- **Activity Feed** - Personalized timeline showing friends' reading activities and posts
+- **Posts & Comments** - Share thoughts, create discussions, and engage with the community
+- **Reactions** - Express yourself with reactions on posts, comments, and reviews
+- **Direct Messaging** - Real-time one-on-one conversations with other readers
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 🌐 Communities
+- **Reading Groups** - Create or join book clubs and genre-specific communities
+- **Community Chat** - Dedicated messaging system for group discussions
+- **Moderation Tools** - Role-based permissions (Owner, Admin, Moderator, Member)
+- **Privacy Controls** - Public communities or private groups with join requests
+- **Community Management** - Transfer ownership and manage member roles
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🔔 Engagement Features
+- **Real-time Notifications** - Stay updated on likes, comments, friend requests, and mentions
+- **Activity Timeline** - Track your reading history and social interactions
+- **User Search** - Find and connect with fellow book enthusiasts
+- **Report System** - Community moderation and content reporting
+- **Block & Mute** - Control your social experience
 
-## Laravel Sponsors
+### 🛡️ Admin Panel
+- **Multi-level Access** - Master Admin and Regular Admin roles with granular permissions
+- **Content Management** - CRUD operations for books, authors, and genres
+- **Bulk Operations** - Import/export data via CSV or JSON formats
+- **User Management** - Oversee user accounts and handle reports
+- **Sample Files** - Download templates for bulk data imports
+- **Author Verification** - Verify legitimate author accounts
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Tech Stack
 
-### Premium Partners
+### Backend
+- **Framework:** Laravel 12
+- **Language:** PHP 8.2
+- **Database:** MySQL
+- **Authentication:** Laravel Breeze
+- **Notifications:** Laravel Notifications
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Frontend
+- **CSS Framework:** Tailwind CSS 3.1
+- **JavaScript:** Alpine.js 3.4
+- **Build Tool:** Vite 7.0
+- **HTTP Client:** Axios
 
-## Contributing
+### Development Tools
+- **Package Manager:** Composer & NPM
+- **Testing:** PHPUnit
+- **Code Quality:** Laravel Pint
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📋 Requirements
 
-## Code of Conduct
+- PHP >= 8.2
+- Composer
+- Node.js & NPM
+- MySQL >= 8.0
+- Apache/Nginx web server
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🔧 Installation
 
-## Security Vulnerabilities
+### 1. Clone the Repository
+```bash
+git clone https://github.com/tusharkumarroy/bookphile.git
+cd bookphile
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 2. Install Dependencies
+```bash
+# Install PHP dependencies
+composer install
 
-## License
+# Install JavaScript dependencies
+npm install
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 3. Environment Configuration
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+```
+
+### 4. Database Setup
+Configure your database credentials in `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=bookphile
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+Run migrations and seeders:
+```bash
+php artisan migrate --seed
+```
+
+### 5. Storage Setup
+```bash
+# Create symbolic link for storage
+php artisan storage:link
+```
+
+### 6. Build Assets
+```bash
+# For development
+npm run dev
+
+# For production
+npm run build
+```
+
+### 7. Start Development Server
+```bash
+php artisan serve
+```
+
+Visit `http://localhost:8000` in your browser.
+
+## 🎯 Usage
+
+### Default Admin Account
+After seeding, you can log in with:
+- **Email:** (check your seeder configuration)
+- **Password:** (check your seeder configuration)
+
+### User Roles
+- **Master Admin** - Full system access including user management
+- **Admin** - Content management and moderation (cannot manage other admins)
+- **User** - Standard reading and social features
+
+### Bulk Import
+1. Navigate to Admin Panel
+2. Select Books, Authors, or Genres
+3. Choose "Bulk Import"
+4. Download sample files for format reference
+5. Upload your CSV or JSON file
+
+## 📁 Project Structure
+
+```
+bookphile/
+├── app/
+│   ├── Http/Controllers/      # Application controllers
+│   ├── Models/                # Eloquent models
+│   ├── Notifications/         # Notification classes
+│   └── Traits/                # Reusable traits
+├── database/
+│   ├── migrations/            # Database migrations
+│   ├── seeders/               # Database seeders
+│   └── factories/             # Model factories
+├── resources/
+│   ├── views/                 # Blade templates
+│   ├── js/                    # JavaScript files
+│   └── css/                   # Stylesheets
+├── routes/
+│   ├── web.php               # Web routes
+│   ├── api.php               # API routes
+│   └── auth.php              # Authentication routes
+└── public/                    # Public assets
+```
+
+## 🔐 Security Features
+
+- CSRF Protection
+- SQL Injection Prevention (Eloquent ORM)
+- XSS Protection
+- Password Hashing (bcrypt)
+- Email Verification
+- Role-based Access Control
+- Secure File Uploads
+
+## 🎨 Key Features in Detail
+
+### Import/Export System
+- Support for both CSV and JSON formats
+- Sample files provided for each entity type
+- Bulk operations for efficient data management
+- Error handling and validation
+
+### Social Interactions
+- Friend connections with request/accept flow
+- Asymmetric follow system
+- Threaded comments
+- Multiple reaction types
+- Pin important posts
+
+### Notification System
+- Real-time notification updates
+- Multiple notification types
+- Customizable notification settings
+- Mark as read functionality
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Tushar Kumar Roy**
+- GitHub: (https://github.com/tusharkumarroy/)
+- LinkedIn: (https://www.linkedin.com/in/tushar-kumar-roy-b53b541b7/)
+
+## 🙏 Acknowledgments
+
+- Inspired by [Goodreads.com](https://www.goodreads.com)
+- Developed as part of CSE 3100: Web Programming Laboratory
+- Built with [Laravel](https://laravel.com)
+- Styled with [Tailwind CSS](https://tailwindcss.com)
+
+## 📧 Contact
+
+For questions or feedback, please open an issue or contact (tusharkumarroy.dev@gmail.com)
+
+---
+
+⭐ If you found this project helpful, please consider giving it a star!
