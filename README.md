@@ -232,6 +232,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Tushar Kumar Roy**
+- Portfolio: (https://tusharkumarroy.gamer.gd/)
 - GitHub: (https://github.com/tusharkumarroy/)
 - LinkedIn: (https://www.linkedin.com/in/tushar-kumar-roy-b53b541b7/)
 
